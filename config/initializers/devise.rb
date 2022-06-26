@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '48bcdeb0ab0e46d61ae02bad2e0be3f7cce589283306d468c9763107231f717494e0207f52fb0e3847dee0f6f9289bd62750e3639ebac04f20cca5ff83270cbd'
+  # config.secret_key = '6712960cb797b6476950213e3ce01c975eb6b7feb7b4dd3373a672c1a0b6dea34bc34bc3cbabde3923bf200bcb43e382f0a5ed145defdf6370f53ad1b77bc014'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -24,7 +24,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'pedromsra@gmail.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'fa45d6d4b91f1391210f71a02794402c98d858193db5505651e9c3300d65db16d0d18c0bc5658e8ba52a3d943be2fd1882a90164cd7e11ec3718f0a27d41a574'
+  # config.pepper = '984a66dd3384e831d105a68e9583b91ceca49ef694e2442ad1d2cb98be1ef9c9b2d1e6649893c84ba8175b9e491c30b96e35cd045b44d5aa26c9c6ee3362e6ed'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -164,7 +164,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
-  # config.remember_for = 2.weeks
+  config.remember_for = 2.years
 
   # Invalidates all the remember me tokens when the user signs out.
   config.expire_all_remember_me_on_sign_out = true
