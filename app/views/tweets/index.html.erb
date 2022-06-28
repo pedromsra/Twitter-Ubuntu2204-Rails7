@@ -1,9 +1,28 @@
 <section class='section'>
   <div class='container'>
     <div class='columns'>
-      <%= render 'trends' %>
+      <% if user_signed_in? %>
+        <div class="column is-one-quarter">
+          <p class="bd-notification is-info">
+              <%= render 'profile' %>
+          </p>
+          <div class="columns is-mobile">
+            <div class="column">
+              <p class="bd-notification is-info">
+                <%= render 'trends' %>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
+      <% if !user_signed_in? %><%= render 'trends' %><% end %>
+
       <%= render 'feed'%>
+      
       <%= render 'who-to-follow'%>
+      
+      
     </div>
   </div>
 </section>
